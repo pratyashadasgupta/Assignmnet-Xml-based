@@ -1,0 +1,77 @@
+package com.training.assignmentspring;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import org.springframework.stereotype.Component;
+@Component
+public class Car implements Vehicle{
+	
+	@Autowired
+	
+	private Model type;
+	
+	@Autowired
+	
+	private Tyre brand;
+	
+	
+	@Autowired
+	private Seat seat;
+	
+	public Seat getSeat() {
+		return seat;
+	}
+
+    public void setSeat(Seat seat) {
+		this.seat = seat;
+	}
+
+
+    @Autowired
+	private Colour colour;
+    
+	
+	public Colour getColour() {
+		return colour;
+	}
+
+
+
+	public void setColour(Colour colour) {
+		this.colour = colour;
+	}
+
+
+
+	public Model getType() {
+		return type;
+	}
+
+
+
+	public void setType(Model model) {
+		this.type = type;
+	}
+	
+	
+	
+	public Tyre getBrand() {
+		return brand;
+	}
+
+
+
+	public void setBrand(Tyre brand) {
+		this.brand = brand;
+	}
+	
+
+	public void drive() {
+	
+	    System.out.println("CAR ["+ type + "[Tyre[" + brand + "]"+ ",Colour["+colour + "]"+",Seat["+seat+"]]");
+    }
+
+}
+
+
+	

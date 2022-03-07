@@ -1,0 +1,20 @@
+package com.training.assignmentspring;
+
+public class Seat {
+	
+	private String seat;
+	
+
+	public String getSeat() {
+		return seat;
+	}
+
+	public void setSeat(String seat) {
+		this.seat = seat;
+	}
+
+	@Override
+	public String toString() {
+		return seat ;
+	}
+}

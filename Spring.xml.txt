@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<beans  xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:p="http://www.springframework.org/schema/p"
+    xmlns:context="http://www.springframework.org/schema/context"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context-4.0.xsd">
+        
+        
+        
+       <context:component-scan base-package="com.training.assignmentspring"></context:component-scan>
+        
+        
+        <bean id="model" class="com.training.assignmentspring.Model">
+        <property name="type" value="Hyundai"></property>
+        
+        </bean>
+        
+        <bean id="tyre" class="com.training.assignmentspring.Tyre">
+        <property name="brand" value="MRF"></property>
+        </bean>
+        
+        <bean id="colour" class="com.training.assignmentspring.Colour">
+        <property name="colour" value="Red"></property>
+        </bean>
+        
+        <bean id="seat" class="com.training.assignmentspring.Seat">
+        <property name="seat" value="Hyundai"></property>
+        </bean>
+        
+        
+         <context:component-scan base-package="com.training.assignmentspring"></context:component-scan>
+         <bean id="model1" class="com.training.assignmentspring.Model">
+        <property name="type1" value="Maruti"></property>
+        
+        </bean>
+        
+        <bean id="tyre1" class="com.training.assignmentspring.Tyre">
+        <property name="brand1" value="Ceat"></property>
+        </bean>
+        
+        <bean id="colour1" class="com.training.assignmentspring.Colour">
+        <property name="colour1" value="Blue"></property>
+        </bean>
+        
+        <bean id="seat1" class="com.training.assignmentspring.Seat">
+        <property name="seat1" value="Marutii"></property>
+        </bean>
+        
+          
+ 
+        
+</beans>
